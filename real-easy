@@ -1,2 +1,6 @@
 n = int(input("Number of Marbles :"))
 values = list(map(int, input("Enter Multiple Values: ").split()))
+price = 0
+for j in range(0,n):
+    price += (n-j)*2**(j)
+print(price)
