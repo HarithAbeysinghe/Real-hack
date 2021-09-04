@@ -1,1 +1,2 @@
-
+n = int(input("Number of Marbles :"))
+values = list(map(int, input("Enter Multiple Values: ").split()))
