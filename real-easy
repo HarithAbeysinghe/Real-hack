@@ -19,3 +19,25 @@ for i in range(m,n+1):
             if facts >2 and facts%2 ==0:
                 numbers+=1
 print(numbers)
+
+
+
+
+
+m = input()
+n = int(input())
+p = int(input())
+names = list(map(str, input().split()))
+names.append(m)
+names.sort()
+if len(m) < 20 and n < 100 and p < 100 and (len(names) - 1) < 20 * p:
+    num_p_once = p
+    specific_paitent = names.index(m) + 1
+
+    turn = specific_paitent / n
+
+    if turn % p != 0:
+        turn = specific_paitent // n + 1
+
+    time = turn * 20
+    print(time)
